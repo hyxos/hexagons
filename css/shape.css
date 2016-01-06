@@ -1,0 +1,140 @@
+/* Sass Shape Machine Mixin
+
+Simple, sassy shapes ;)
+
+based on: http://css-tricks.com/examples/ShapesOfCSS/ */
+/* line 145, ../sass/shape.scss */
+body {
+  background-color: #3d3d3d;
+}
+
+/* line 149, ../sass/shape.scss */
+div {
+  float: left;
+  margin: 50px;
+}
+
+/* line 155, ../sass/shape.scss */
+.square {
+  width: 50px;
+  height: 50px;
+  background-color: #967bd3;
+}
+
+/* line 159, ../sass/shape.scss */
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: #ffb347;
+  border-radius: 50%;
+}
+
+/* line 163, ../sass/shape.scss */
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 75px solid #8cd6d8;
+}
+
+/* line 167, ../sass/shape.scss */
+.right-triangle {
+  width: 0;
+  height: 0;
+  border-bottom: 50px solid #bee6b6;
+  border-right: 50px solid transparent;
+}
+
+/* line 171, ../sass/shape.scss */
+.diamond {
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom-color: #dd9bb9;
+  position: relative;
+  top: -50px;
+}
+/* line 53, ../sass/shape.scss */
+.diamond:after {
+  content: '';
+  position: absolute;
+  left: -50px;
+  top: 50px;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-top-color: #dd9bb9;
+}
+
+/* line 175, ../sass/shape.scss */
+.pentagon {
+  position: relative;
+  width: 50px;
+  border-width: 46.2963px 16.66667px 0;
+  border-style: solid;
+  border-color: #c4b5e6 transparent;
+}
+/* line 71, ../sass/shape.scss */
+.pentagon:before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -77.27273px;
+  left: -16.66667px;
+  border-width: 0 41.66667px 32.40741px;
+  border-style: solid;
+  border-color: transparent transparent #c4b5e6;
+}
+
+/* line 179, ../sass/shape.scss */
+.hexagon {
+  width: 100px;
+  height: 55px;
+  background: #ffb347;
+  position: relative;
+  color: white;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  transition: .5s;
+}
+/* line 88, ../sass/shape.scss */
+.hexagon:before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 25px solid #ffb347;
+}
+/* line 99, ../sass/shape.scss */
+.hexagon:after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 25px solid #ffb347;
+}
+
+/* line 187, ../sass/shape.scss */
+.hexagon:hover {
+  transform: rotate(90deg);
+}
+
+/* line 191, ../sass/shape.scss */
+span {
+  font-size: 6em;
+  font-family: sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 60px;
+}

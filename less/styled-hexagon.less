@@ -1,0 +1,37 @@
+@import "hexagon";
+
+body {
+  background-color: #87907D;
+  background: linear-gradient(
+      rgba(255, 200, 0, 0.35),
+      rgba(255, 200, 0, 0.35)
+    ),
+     url(https://www.xmple.com/wallpaper/beehive-hexagon-white-honeycomb-grey-1920x1080-c2-ffffff-a9a9a9-l2-6-102-a-30-f-5.svg);
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  height: 108px;
+  margin: 10px;
+  padding: 15px;
+  background-color: rgba(0,0,0,0.3);
+  border: 2px solid #FCB514;
+}
+.orange-badge {
+  .hexagon(52px, #FFD700);
+  transition: 0.25s;
+  float: left;
+  &:hover {
+    transform: rotate(90deg);
+  }
+}
+
+span {
+  font-size: 62px;
+  font-family: serif;
+  text-shadow: 1px 1px #3d3d3d;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 60px;
+}
